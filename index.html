@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Diabetes Prediction Form</h2>
+    <form id="diabetesForm">
+        <label for="pregnancies">Pregnancies:</label>
+        <input type="number" name="Pregnancies" required>
+        
+        <label for="glucose">Glucose:</label>
+        <input type="number" name="Glucose" required>
+        
+        <label for="bloodPressure">Blood Pressure:</label>
+        <input type="number" name="BloodPressure" required>
+        
+        <label for="skinThickness">Skin Thickness:</label>
+        <input type="number" name="SkinThickness" required>
+        
+        <label for="insulin">Insulin:</label>
+        <input type="number" name="Insulin" required>
+        
+        <label for="bmi">BMI:</label>
+        <input type="number" step="0.1" name="BMI" required>
+        
+        <label for="diabetesPedigreeFunction">Diabetes Pedigree Function:</label>
+        <input type="number" step="0.001" name="DiabetesPedigreeFunction" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" name="Age" required>
+        
+        <button type="submit">Predict Diabetes</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
